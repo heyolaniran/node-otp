@@ -1,10 +1,7 @@
-require("dotenv").config() ; 
 const express = require('express') ; 
 const app = express() ; 
 
-const sharedSecret = process.env.SHARED_SECRET ; 
-
-const port = process.env.PORT  ; 
+const port = process.env.PORT || 3000 ; 
 
 app.use(express.json()) ; 
 
